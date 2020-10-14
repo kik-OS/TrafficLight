@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,56 +29,60 @@
                                     <color key="titleColor" red="0.11877239495515823" green="0.084423013031482697" blue="0.028960894793272018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="toggleColorPressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vcn-m7-z2u"/>
+                                    <action selector="toggleColorPressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="xjP-Sl-DYJ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="xaD-SP-E89">
-                                <rect key="frame" x="105.33333333333333" y="78" width="203.33333333333337" height="684"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="We4-no-n0w">
+                                <rect key="frame" x="157" y="234" width="100" height="370"/>
                                 <subviews>
-                                    <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-5R-J1S">
-                                        <rect key="frame" x="0.0" y="0.0" width="203.33333333333334" height="203.33333333333334"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGZ-HH-Uze">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="NUo-5R-J1S" secondAttribute="height" multiplier="1:1" id="6nS-A6-kUl"/>
+                                            <constraint firstAttribute="width" secondItem="EGZ-HH-Uze" secondAttribute="height" multiplier="1:1" id="Fis-fS-qBC"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU0-Dx-6CO">
-                                        <rect key="frame" x="0.0" y="240.33333333333331" width="203.33333333333334" height="203.33333333333331"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxE-w2-fMe">
+                                        <rect key="frame" x="0.0" y="135" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="FU0-Dx-6CO" secondAttribute="height" multiplier="1:1" id="PEJ-G7-oPh"/>
+                                            <constraint firstAttribute="width" secondItem="dxE-w2-fMe" secondAttribute="height" multiplier="1:1" id="drd-dW-lgU"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gG3-x5-Qdm">
-                                        <rect key="frame" x="0.0" y="480.66666666666657" width="203.33333333333334" height="203.33333333333331"/>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymj-Eh-wTp">
+                                        <rect key="frame" x="0.0" y="270" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="gG3-x5-Qdm" secondAttribute="height" multiplier="1:1" id="AQ4-Ja-t3z"/>
+                                            <constraint firstAttribute="width" secondItem="ymj-Eh-wTp" secondAttribute="height" multiplier="1:1" id="S1A-RH-f9i"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EeH-2P-nkE"/>
+                                    <constraint firstAttribute="height" constant="370" id="LO8-4r-xQG"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="xaD-SP-E89" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fJ-Ak-xMw"/>
-                            <constraint firstItem="xaD-SP-E89" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="9I6-2E-wck"/>
-                            <constraint firstItem="hk3-zo-ZxM" firstAttribute="top" secondItem="xaD-SP-E89" secondAttribute="bottom" constant="36" id="9dr-lD-KqB"/>
+                            <constraint firstItem="We4-no-n0w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="55A-gz-L8H"/>
                             <constraint firstItem="hk3-zo-ZxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLf-me-h68"/>
+                            <constraint firstItem="We4-no-n0w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HRb-Cu-GAT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hk3-zo-ZxM" secondAttribute="bottom" constant="10" id="gY6-dD-Xai"/>
+                            <constraint firstItem="We4-no-n0w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-29" id="leq-Gc-jYX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenColorView" destination="gG3-x5-Qdm" id="jyu-cK-Izb"/>
-                        <outlet property="orangeColorView" destination="FU0-Dx-6CO" id="K84-4G-1aP"/>
-                        <outlet property="redColorView" destination="NUo-5R-J1S" id="kNu-ss-zYs"/>
-                        <outlet property="toggleColorButton" destination="hk3-zo-ZxM" id="gox-y2-0l9"/>
+                        <outlet property="greenColorView" destination="ymj-Eh-wTp" id="iTB-yN-XEs"/>
+                        <outlet property="orangeColorView" destination="dxE-w2-fMe" id="BN2-1V-DCa"/>
+                        <outlet property="redColorView" destination="EGZ-HH-Uze" id="DW8-IQ-Syn"/>
+                        <outlet property="toggleColorButton" destination="hk3-zo-ZxM" id="iez-bd-aNB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="76.056338028169009"/>
+            <point key="canvasLocation" x="133.59999999999999" y="76.011994002998506"/>
         </scene>
     </scenes>
     <resources>

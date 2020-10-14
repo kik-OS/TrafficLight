@@ -10,21 +10,21 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var redColorView: UIView!
+    
     @IBOutlet var orangeColorView: UIView!
+    
     @IBOutlet var greenColorView: UIView!
     @IBOutlet var toggleColorButton: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        redColorView.layer.cornerRadius = 100
-        orangeColorView.layer.cornerRadius = 100
-        greenColorView.layer.cornerRadius = 100
+        redColorView.layer.cornerRadius = 50
+        orangeColorView.layer.cornerRadius = 50
+        greenColorView.layer.cornerRadius = 50
         toggleColorButton.layer.cornerRadius = 10
-    }
-
-    @IBAction func toggleColorPressedButton() {
+        
     }
     
+    @IBAction func toggleColorPressedButton() {
+    }
 }
 
